@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Regex testing tool
+{% endblock %}
+
+
+{% block content %}
+<h2> Welcome to regex testing tool! </h2>
+<form action="/" method="POST">
+<label for=regex">Regex
+<input type="text" id="regex" name="regex">
+    </label>
+<label for=text">Text
+<input type="text" id="text" name="text">
+    </label>
+<button type="submit">Submit</button>
+</form>
+<a href="/history/">History </a>
+<span>
+    <p>{{ result }}</p>
+{% endblock %}
+

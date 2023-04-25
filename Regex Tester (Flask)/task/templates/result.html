@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Result
+{% endblock %}
+
+
+{% block content %}
+<p>Regex: {{ entry.regex }}</p>
+<p>Text: {{ entry.text }}</p>
+<p>{{ entry.result }}</p>
+{% endblock %}
